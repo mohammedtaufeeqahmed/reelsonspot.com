@@ -99,6 +99,21 @@ section {
     background-size: cover;
     background-position: center;
 }
+button-pack {
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.button-pack {
+    padding-inline: 17px;
+    padding-block: 15px;
+    text-decoration: none;
+    transition: all 0.5s;
+    background: linear-gradient(217deg, #771f2d, rgb(205 133 43) 90.71%);
+    border: solid 2px var(--accent-color);
+    font-weight: 600;
+}
 
 button {
     padding-inline: 1rem;
@@ -330,6 +345,9 @@ a {
     background-color: #ece7de;
 }
 
+.bg-grad-rg-color {
+    background: linear-gradient(217deg, rgb(205 133 43), #771f2d 70.71%);
+}
 .accent-color {
     color: #D2A85F;
 }
@@ -986,3 +1004,6 @@ a {
     animation-play-state: paused;
 }
 
+.pack-img{
+    border-radius: 1rem;
+}
