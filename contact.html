@@ -172,39 +172,49 @@
                                 </div>
                             </div>
                             <form
-                                class="d-flex flex-column h-100 justify-content-center w-100 needs-validation mb-3 form"
-                                novalidate>
-                                <div class="mb-3">
-                                    <input type="text" class="form-control py-3 px-4" name="name" id="name"
-                                        placeholder="Name" required>
-                                    <div class="invalid-feedback">
-                                        The field is required.
-                                    </div>
+                            class="d-flex flex-column h-100 justify-content-center w-100 needs-validation mb-3 form"
+                            novalidate>
+                            <div class="mb-3">
+                                <input type="text" class="form-control py-3 px-4" name="name" id="name"
+                                    placeholder="Name" required>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
                                 </div>
-                                <div class="mb-3">
-                                    <input type="email" class="form-control py-3 px-4" name="email" id="email"
-                                        placeholder="Email" required>
-                                    <div class="invalid-feedback">
-                                        The field is required.
-                                    </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control py-3 px-4" name="email" id="email"
+                                    placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
                                 </div>
-                                <div class="mb-3">
-                                    <input type="text" class="form-control py-3 px-4" name="mobile" id="mobile"
-                                        placeholder="Mobile Number" required>
-                                    <div class="invalid-feedback">
-                                        The field is required.
-                                    </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control py-3 px-4" name="mobile" id="mobile" 
+                                    placeholder="Mobile Number" required pattern="^\d{10}$">
+                                <div class="invalid-feedback">
+                                    Please enter a valid 10-digit mobile number.
                                 </div>
-                                <div class="mb-3">
-                                    <textarea class="form-control py-3 px-4" id="message" name="message" rows="5"
-                                        placeholder="Message"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control py-3 px-4" name="address" id="address"
+                                    placeholder="Address" required>
+                                <div class="invalid-feedback">
+                                    Please enter your address.
                                 </div>
-                                <div class="mb-3">
-                                    <button type="submit" class="btn submit_form font-1 fw-bold ls-2 py-3">
-                                        Send Message
-                                    </button>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control py-3 px-4" id="shootdetails" name="shootdetails" rows="5"
+                                    placeholder="Shoot details" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter your shoot details.
                                 </div>
-                            </form>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn submit_form font-1 fw-bold ls-2 py-3">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
 
                         </div>
                     </div>
@@ -339,6 +349,7 @@
     </footer>
 
     <script src="js/vendor/fslightbox.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>

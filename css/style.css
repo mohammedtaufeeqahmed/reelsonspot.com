@@ -878,7 +878,7 @@ a {
 }
 
 .logo-partner {
-    filter: grayscale(50%);
+    filter: grayscale(10%);
     opacity: 0.7;
     transition: all 0.3s ease;
 }
